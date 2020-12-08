@@ -1,6 +1,6 @@
 # katas-codewars
 
-Kata 1 
+// Kata 1 
 
 Armstrong Number
 
@@ -8,7 +8,7 @@ An Armstrong number is a number such that the sum of its digits raised to the th
 
 When you pass 0 or 1 , it should return true.
 
-Kata 2
+// Kata 2
 
 Blood moon 
 
@@ -52,3 +52,21 @@ travel = itinerary([
   {in: "FCO", out: "JFK"},
   {in: "JFK", out: "FCO"}
 ]); // TRN-FCO-JFK-FCO
+
+// Kata 4 
+
+Car Depreciation
+
+You own a great car website that helps people make decisions about buying the best new car for them. You decide that if you had a calculator on the website which lets people know their car's value after depreciation in a couple of years, would be a great idea!
+
+Write a function that takes the car's value when new (p) and return its value to 2 decimal places in the nth year (n).
+
+Yearly depreciation:
+
+Year 1 = 20%
+
+Year 2 = 20%
+
+Year 3+ = 10% per year (ie. after 3 years the cars value depreciates 10% every year)
+
+Return your answer as a string with 2 decimal places.
