@@ -22,3 +22,20 @@ function itinerary(travel) {
 // solution 2 
 
 const itinerary = travel => travel.map(x=>x.in + '-' + x.out).join('-').replace(/(...)-(?=\1)/g, ''); 
+
+// Kata 4 
+
+// solution 1 
+
+function car(p,n){
+if (n == 0) {
+    return p.toFixed(2);
+  }
+  p = p - p * (n > 2 ? 0.1 : 0.2);
+  n--;
+  return car(p, n);
+}
+
+// solution 2 
+
+const car = (p, n) => (p * Math.pow(0.8, Math.min(2, n)) * Math.pow(0.9, Math.max(0, n - 2))).toFixed(2);
