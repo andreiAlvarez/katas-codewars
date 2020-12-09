@@ -39,3 +39,17 @@ if (n == 0) {
 // solution 2 
 
 const car = (p, n) => (p * Math.pow(0.8, Math.min(2, n)) * Math.pow(0.9, Math.max(0, n - 2))).toFixed(2);
+
+// Kata 5 
+
+function factor(n){
+ let arr = [];
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) arr.push(i);
+  }
+  return arr;
+}
+
+// solution 2 
+
+const factor = n => n !== null ? new Array(n).fill(0).map((v,i) => i + 1).filter(d => n % d === 0) : [];
