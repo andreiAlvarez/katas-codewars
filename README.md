@@ -70,3 +70,10 @@ Year 2 = 20%
 Year 3+ = 10% per year (ie. after 3 years the cars value depreciates 10% every year)
 
 Return your answer as a string with 2 decimal places.
+
+// Kata 5
+
+Write a function that calculate factor for a given number. Return empty array if null value given.
+
+Example: 12 = [1,2,3,4,6,12]
+Note: 0 < n <= 10000000
