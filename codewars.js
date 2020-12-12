@@ -53,3 +53,7 @@ function factor(n){
 // solution 2 
 
 const factor = n => n !== null ? new Array(n).fill(0).map((v,i) => i + 1).filter(d => n % d === 0) : [];
+
+// Kata 6 
+
+const annulusArea = a => Number(((Math.PI * (a * a)) / 4.0).toFixed(2));
