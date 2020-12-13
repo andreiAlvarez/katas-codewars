@@ -57,3 +57,29 @@ const factor = n => n !== null ? new Array(n).fill(0).map((v,i) => i + 1).filter
 // Kata 6 
 
 const annulusArea = a => Number(((Math.PI * (a * a)) / 4.0).toFixed(2));
+
+// kata 7 
+
+const emoji = {
+  "[[f9.smile]]": ":)",
+  "[[f9.grin]]": ":D",
+  "[[f9.smiley]]": "=)",
+  "[[f9.sohappy]]": "XD",
+  "[[f9.tongue]]": ":P",
+  "[[f9.wink]]": ";)",
+  "[[f9.sad]]": ":(",
+  "[[f9.slant]]": ":/",
+  "[[f9.surprised]]": ":O",
+  "[[f9.catface]]": ":3",
+  "[[f9.cool]]": "B)",
+  "[[f9.unimpressed]]": ":|",
+  "[[f9.angry]]": ">:|",
+  "[[f9.kissing]]": "^.^",
+  "[[f9.dazed]]": "*_*",
+  "[[f9.dance1]]": "<(^.^<)",
+  "[[f9.dance2]]": "(>^.^)>",
+  "[[f9.heart]]": "<3"
+};
+const insert = string => {
+  return string.replace(/(\[\[f9\.(\w+)\]\])/g, match => emoji[match]);
+};
