@@ -83,3 +83,7 @@ const emoji = {
 const insert = string => {
   return string.replace(/(\[\[f9\.(\w+)\]\])/g, match => emoji[match]);
 };
+
+// Kata 8 
+
+const harmonPointTrip = (a, b, c) => ((((a - c) / (b - c)) * b + a) / (1 + (a - c) / (b - c))).toFixed(2);
