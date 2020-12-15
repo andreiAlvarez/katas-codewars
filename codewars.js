@@ -87,3 +87,7 @@ const insert = string => {
 // Kata 8 
 
 const harmonPointTrip = (a, b, c) => ((((a - c) / (b - c)) * b + a) / (1 + (a - c) / (b - c))).toFixed(2);
+
+// kata 9
+
+const isABeforeM = arr => arr.findIndex(v => v === "a") < arr.findIndex(v => v === "m");
