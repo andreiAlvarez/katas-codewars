@@ -91,3 +91,7 @@ const harmonPointTrip = (a, b, c) => ((((a - c) / (b - c)) * b + a) / (1 + (a - 
 // kata 9
 
 const isABeforeM = arr => arr.findIndex(v => v === "a") < arr.findIndex(v => v === "m");
+
+// kata 10 
+
+const cupAndBalls = (ball, pairs) => pairs.reduce((ball, [a, b]) => (a == ball ? b : b == ball ? a : ball), ball);
