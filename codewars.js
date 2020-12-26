@@ -108,3 +108,12 @@ function f(x, cc) {
 
 // solution 2 
 const f = (x,{a,b,c}) => ({[a]:b,[b]:c,[c]:a})[x] ;
+
+// kata 2 
+
+function climbingTime(height, up, down) {
+  if (up <= 0 || down < 0 || height <= 0) return false;
+  for (var i = up, j = 0; ; i += up - down, j++) {
+    if (i >= height) return j + 1;
+  }
+}
