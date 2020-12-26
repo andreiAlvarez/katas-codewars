@@ -95,3 +95,13 @@ const isABeforeM = arr => arr.findIndex(v => v === "a") < arr.findIndex(v => v =
 // kata 10 
 
 const cupAndBalls = (ball, pairs) => pairs.reduce((ball, [a, b]) => (a == ball ? b : b == ball ? a : ball), ball);
+
+// kata 11
+
+function f(x, cc) {
+  let arr = Object.values(cc);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === x && arr[i + 1] === 0) return 0;
+    if (arr[i] === x) return arr[i + 1] || arr[0];
+  }
+}
