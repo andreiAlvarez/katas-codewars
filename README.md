@@ -195,3 +195,11 @@ What is the most efficient way to cycle among three values? Write a function f s
   f(c) = a
 EXAMPLE
   f( 3, { a:3, b:4, c:5 } ) => 4
+ // kata 12
+ 
+ A worm is climbing up a bamboo. How long it will be continuing, if every day it`s climbing up the bamboo "x" amount of meters every day, and each night it slides down for "y" meters?
+
+In this kata you have height, up meters, down meters. Write the function, that calculate and return "days".
+
+function climbingTime(height, up, down)
+Check arguments to be positive numbers, return false if not.
