@@ -105,3 +105,6 @@ function f(x, cc) {
     if (arr[i] === x) return arr[i + 1] || arr[0];
   }
 }
+
+// solution 2 
+const f = (x,{a,b,c}) => ({[a]:b,[b]:c,[c]:a})[x] ;
