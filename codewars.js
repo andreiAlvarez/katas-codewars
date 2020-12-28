@@ -109,11 +109,39 @@ function f(x, cc) {
 // solution 2 
 const f = (x,{a,b,c}) => ({[a]:b,[b]:c,[c]:a})[x] ;
 
-// kata 2 
+// kata 12 
 
 function climbingTime(height, up, down) {
   if (up <= 0 || down < 0 || height <= 0) return false;
   for (var i = up, j = 0; ; i += up - down, j++) {
     if (i >= height) return j + 1;
   }
+}
+
+// kata 13
+
+function anArgument() {
+  let arg = [...arguments];
+  if (arg.length === 0) {
+    return `You didn't give me any arguments.`;
+  }
+  if (arg.length === 1) {
+    return `You gave me 1 argument and it is "${arg[0]}".`;
+  }
+  if (arg.length === 2) {
+    return `You gave me 2 arguments and they are "${arg[0]}" and "${arg[1]}".`;
+  }
+  let str = "";
+  for (let i = 0; i < arg.length; i++) {
+    if (i < arg.length - 2) {
+      str += `"${arg[i]}", `;
+    }
+    if (i === arg.length - 2) {
+      str += `"${arg[i]}" `;
+    }
+    if (i === arg.length - 1) {
+      str += `and "${arg[i]}".`;
+    }
+  }
+  return `You gave me ${arg.length} arguments and they are ${str}`;
 }
