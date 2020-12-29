@@ -145,3 +145,8 @@ function anArgument() {
   }
   return `You gave me ${arg.length} arguments and they are ${str}`;
 }
+
+// kata 14 
+
+const cupAndBalls = (ball, arr) =>
+  arr.reduce((ball, [a, b]) => (a == ball ? b : b == ball ? a : ball), ball);
