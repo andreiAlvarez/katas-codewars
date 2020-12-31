@@ -150,3 +150,8 @@ function anArgument() {
 
 const cupAndBalls = (ball, arr) =>
   arr.reduce((ball, [a, b]) => (a == ball ? b : b == ball ? a : ball), ball);
+
+
+// kata 15
+
+const quarterOf = month => Math.ceil(month/3);
