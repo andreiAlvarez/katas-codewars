@@ -254,3 +254,9 @@ The ball is under cup number : 3
 Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
 
 For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
+
+// kata 16
+
+Write a function that always returns 5
+
+Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
