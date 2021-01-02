@@ -155,3 +155,7 @@ const cupAndBalls = (ball, arr) =>
 // kata 15
 
 const quarterOf = month => Math.ceil(month/3);
+
+// kata 16
+
+const unusualFive = () => ['a','a','a','a','a'].length;
