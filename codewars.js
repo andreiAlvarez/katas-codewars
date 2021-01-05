@@ -159,3 +159,7 @@ const quarterOf = month => Math.ceil(month/3);
 // kata 16
 
 const unusualFive = () => ['a','a','a','a','a'].length;
+
+// kata 17 
+
+const commas = num => (+num.toFixed(3)).toString().replace(/\B(?=(\d{3})+(\.|$))/g, ",");
