@@ -195,6 +195,7 @@ What is the most efficient way to cycle among three values? Write a function f s
   f(c) = a
 EXAMPLE
   f( 3, { a:3, b:4, c:5 } ) => 4
+ 
  // kata 12
  
  A worm is climbing up a bamboo. How long it will be continuing, if every day it`s climbing up the bamboo "x" amount of meters every day, and each night it slides down for "y" meters?
@@ -260,3 +261,14 @@ For example: month 2 (February), is part of the first quarter; month 6 (June), i
 Write a function that always returns 5
 
 Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+
+// kata 17
+Your task is to convert a given number into a string with commas added for easier readability. The number should be rounded to 3 decimal places and the commas should be added at intervals of three digits before the decimal point. There does not need to be a comma at the end of the number.
+You will receive both positive and negative numbers.
+Examples
+commas(1) == "1"
+commas(1000) == "1,000"
+commas(100.2346) == "100.235"
+commas(1000000000.23) == "1,000,000,000.23"
+commas(-1) == "-1"
+commas(-1000000.123) == "-1,000,000.123"
