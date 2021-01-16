@@ -295,7 +295,7 @@ If there is more than one unknown acronym in the string, return only the first i
 If all acronyms can be replaced with full words according to the above, however, return only the altered string.
 If this is the case, ensure that sentences still start with capital letters. '!' or '?' will not be used.
 
-// kata 17 
+// kata 19 
 
 /*
 You throw a ball vertically upwards with an initial speed v (in km per hour). The height h of the ball at each time t is given by h = v*t - 0.5*g*t*t where g is Earth's gravity (g ~ 9.81 m/s**2). A device is recording at every tenth of second the height of the ball. For example with v = 15 km/h the device gets something of the following form: (0, 0.0), (1, 0.367...), (2, 0.637...), (3, 0.808...), (4, 0.881..) ... where the first number is the time in tenth of second and the second number the height in meter.
