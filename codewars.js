@@ -190,3 +190,10 @@ function acronymBuster(string) {
     return `${arr[0]} is an acronym. I do not like acronyms. Please remove them from your email.`;
   return string.replace(/(\.\s+[a-z]|^[a-z])/g, v => v.toUpperCase());
 }
+
+// kata 19 /*
+
+function maxBall(v0) {
+  const v = (v0 * 1000 * 10) / 3600;
+  return Math.round(v / 9.81);
+}
